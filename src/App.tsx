@@ -1,8 +1,17 @@
+import { Outlet } from 'react-router-dom';
+import RootSuspense from './providers/RootSuspense';
+import RootErrorBoundary from './providers/RootErrorHandler';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
-    <main>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </main>
+    <RootErrorBoundary>
+      <RootSuspense>
+        <Outlet />
+        <ToastContainer />
+      </RootSuspense>
+    </RootErrorBoundary>
   );
 }
 
