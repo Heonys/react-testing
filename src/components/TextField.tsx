@@ -1,7 +1,6 @@
 import cn from 'classnames';
 import React, { useState } from 'react';
 
-
 type Props = {
   placeholder?: string;
   className?: string;
