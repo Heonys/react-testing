@@ -1,7 +1,6 @@
 import { screen } from '@testing-library/react';
 import render from './render';
-import NotFoundPage from '@/pages/NotFoundPage';
-import ErrorPage from '@/pages/ErrorPage';
+import { NotFoundPage, ErrorPage } from '@/pages';
 
 const navigateMockFn = vi.fn();
 

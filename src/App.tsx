@@ -1,6 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import RootSuspense from './providers/RootSuspense';
-import RootErrorBoundary from './providers/RootErrorHandler';
+import { RootSuspense, RootErrorBoundary } from './providers';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

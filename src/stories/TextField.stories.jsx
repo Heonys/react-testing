@@ -1,5 +1,5 @@
 import React from 'react';
-import TextField from '../components/TextField';
+import { TextField } from '../components';
 
 export default {
   title: '텍스트 필드',
